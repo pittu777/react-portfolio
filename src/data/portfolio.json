@@ -1,0 +1,47 @@
+
+{
+    "portfolio": [
+        {
+            "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/1-port-1.png",
+            "title": "Quote",
+            "description": "html,css,js",
+            "url": "https://github.com/pittu777?tab=repositories"
+        },
+        {
+            "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/2-port-1.png",
+            "title": "weather",
+            "description": "html,css,js",
+            "url": "https://github.com/pittu777?tab=repositories"
+        },
+        {
+            "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/3-port-1.png",
+            "title": "model",
+            "description": "html,css,js",
+            "url": "https://github.com/pittu777?tab=repositories"
+        },
+        {
+            "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/4-port-1.png",
+            "title": "counter",
+            "description": "html,css,js",
+            "url": "https://github.com/pittu777?tab=repositories"
+        },
+        {
+            "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/5-port-1.png",
+            "title": "nav-bar",
+            "description": "html,css,js",
+            "url": "https://github.com/pittu777?tab=repositories"
+        },
+        {
+            "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/6-port-1.png",
+            "title": "nav-bar",
+            "description": "html,css,js",
+            "url": "https://github.com/pittu777?tab=repositories"
+        },
+        {
+            "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/7-port-1.png",
+            "title": "color-flip",
+            "description": "JS",
+            "url": "https://github.com/pittu777?tab=repositories"
+        }
+    ]
+}
