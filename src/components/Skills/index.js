@@ -136,13 +136,13 @@ const Skills = () => {
 My combination of skills in Django, Python, HTML, CSS, JavaScript, and my ongoing learning in React, allow me to approach software development projects with confidence and an understanding of the full-stack development process. With my skills, 
 I am able to provide efficient solutions to complex problems and deliver quality results that meet the needs of clients and users.
 
-<p>
+
             Visit my
             <a rel="noreferrer" style={spanStyles} target="_blank" href="https://www.linkedin.com/in/pittu-prasanth-2a3a28230/">LinkedIn </a>
             profile for more details. Also you can checkout my cv 
             <Link to={CVPDF} style={spanStyles} target="_blank" rel="noopener noreferrer">Link</Link>
             
-          </p>
+          
           </p>
           
           
