@@ -5,6 +5,7 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import Map from './Map/Map'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -118,17 +119,7 @@ const Contact = () => {
           <span>pittuprasanth98@gmail.com</span>
         </div>
         <div className="map-wrap">
-        
-        <iframe
-        title="Contact Form" 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.121590179898!2d76.57575967530433!3d30.771166674565762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ffb140bd63e07%3A0x68591e334d17a988!2sChandigarh%20University!5e0!3m2!1sen!2sin!4v1688461630075!5m2!1sen!2sin"
-        width="800"
-        height="600"
-        style={{ border: 0 }}
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
+        <Map/>
         </div>
         
       </div>
