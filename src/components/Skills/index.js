@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
+
 import AnimatedLetters from '../AnimatedLetters';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss';
@@ -22,6 +23,10 @@ const Skills = () => {
       clearTimeout(timeoutId);
     };
   }, []);
+
+  const spanStyles = {
+    color: 'yellow',
+  };
   
 
   return (
@@ -35,7 +40,7 @@ const Skills = () => {
               idx={15}
             />
           </h1>
-          <p>
+          {/* <p>
           
             Learning in front-end development including technologies like
             <span class="tech-tag">HTML5</span>,
@@ -51,7 +56,76 @@ const Skills = () => {
             <span class="tech-tag">Git</span>, etc.
           
           </p>
-          
+           */}
+           <p>
+            Learning in front-end development including technologies like
+            <span >
+              <a href="https://en.wikipedia.org/wiki/HTML5" style={spanStyles} target="_blank" rel="noopener noreferrer">
+                HTML5
+              </a>
+            </span>
+            ,
+            <span className="tech-tag">
+              <a href="https://en.wikipedia.org/wiki/CSS" style={spanStyles} target="_blank" rel="noopener noreferrer">
+                CSS3
+              </a>
+            </span>
+            ,
+            <span className="tech-tag">
+              <a href="https://en.wikipedia.org/wiki/JavaScript" style={spanStyles} target="_blank" rel="noopener noreferrer">
+                JavaScript
+              </a>
+            </span>
+            ,
+            <span className="tech-tag">
+              <a href="https://jquery.com/" style={spanStyles} target="_blank" rel="noopener noreferrer">
+                jQuery
+              </a>
+            </span>
+            ,
+            <span className="tech-tag">
+              <a href="https://angular.io/" style={spanStyles} target="_blank" rel="noopener noreferrer">
+                Angular2
+              </a>
+            </span>
+            ,
+            <span className="tech-tag">
+              <a href="https://reactjs.org/" style={spanStyles} target="_blank" rel="noopener noreferrer">
+                React
+              </a>
+            </span>
+            ,
+            <span className="tech-tag">
+              <a href="https://www.typescriptlang.org/" style={spanStyles} target="_blank" rel="noopener noreferrer">
+                TypeScript
+              </a>
+            </span>
+            ,
+            <span className="tech-tag">
+              <a href="https://jasmine.github.io/" style={spanStyles} target="_blank" rel="noopener noreferrer">
+                Jasmine
+              </a>
+            </span>
+            ,
+            <span className="tech-tag">
+              <a href="https://getbootstrap.com/" style={spanStyles} target="_blank" rel="noopener noreferrer">
+                Bootstrap
+              </a>
+            </span>
+            ,
+            <span className="tech-tag">
+              <a href="https://sass-lang.com/" style={spanStyles} target="_blank" rel="noopener noreferrer">
+                Sass
+              </a>
+            </span>
+            ,
+            <span className="tech-tag">
+              <a href="https://git-scm.com/" style={spanStyles} target="_blank" rel="noopener noreferrer">
+                Git
+              </a>
+            </span>
+            
+          </p>
           <p align="LEFT">
             
           
