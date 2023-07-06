@@ -4,6 +4,7 @@ import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss';
+import data from '../MyData/MyData';
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -31,9 +32,7 @@ const About = () => {
           </h1>
           <p align="LEFT">
             
-          My name is Pittu Prasanth and I am a second-year computer science engineering student at Chandigarh University. I have a keen interest in web development and am currently learning programming languages such as Python, HTML, CSS, JS, and React.
-
-I am a self-motivated individual with a passion for learning new technologies and solving complex problems. I enjoy working on projects that challenge me and push me to develop my skills further.
+          {`${data[0].aboutMe}`}
           
           </p>
         </div>

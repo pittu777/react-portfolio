@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio';
 import Skill from './components/Skills';
 import Tips from './components/Tips';
 
+
 import './App.scss';
 
 function App() {

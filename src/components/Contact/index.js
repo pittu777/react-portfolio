@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import Map from './Map/Map'
+import data from '../MyData/MyData'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -116,14 +117,14 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          PITTU PRASANTH,
+          {data[0].name},
           <br />
-          CHANDIGARH,
+          {data[0].city},
           <br />
-          PUNJAB <br />
-          INDIA <br />
+          {data[0].state}, <br />
+          {data[0].country} <br />
           <br />
-          <span>pittuprasanth98@gmail.com</span>
+          <span>{data[0].mail}</span>
         </div>
         <div className="map-wrap">
         <Map/>
