@@ -7,7 +7,8 @@ import AnimatedLetters from '../AnimatedLetters';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss';
 import './index.css';
-import TextShpere from './tagCloud';
+// import TextShpere from './tagCloud';
+import TagCloud from "TagCloud";
 
 
 
@@ -26,6 +27,52 @@ const Skills = () => {
       clearTimeout(timeoutId);
     };
   }, []);
+  const TextShpere = () => {
+    // Animation settings for Text Cloud
+    useEffect(() => {
+      return () => {
+        const container = ".tagcloud";
+        const texts = [
+          "HTML",
+          "CSS",
+          "SASS",
+          "JavaScript",
+          "React",
+          "Vue",
+          "Nuxt",
+          "NodeJS",
+          "Babel",
+          "Jquery",
+          "ES6",
+          "GIT",
+          "GITHUB",
+          "karma",
+          "JSON",
+          "Rest",
+          "Bootstrap",
+          "npm",
+          "_lodash",
+          "Bower",
+          "RxJs"
+        ];
+        let radius = 300;
+        if (window.innerWidth <= 768) {
+          radius = 150; // Radius for mobile screens
+        }
+  
+        const options = {
+          radius: radius,
+          maxSpeed: "fast",
+          initSpeed: "fast",
+          keep: true,
+        };
+  
+        TagCloud(container, texts, options);
+      };
+    }, []);
+    
+  }
+  
 
   const spanStyles = {
     color: 'yellow',
@@ -44,23 +91,7 @@ const Skills = () => {
           </h1>
           
           
-          {/* <p>
-          
-            Learning in front-end development including technologies like
-            <span class="tech-tag">HTML5</span>,
-            <span class="tech-tag">CSS3</span>,
-            <span class="tech-tag">JavaScript</span>,
-            <span class="tech-tag">jQuery</span>,
-            <span class="tech-tag">Angular2</span>,
-            <span class="tech-tag">React</span>,
-            <span class="tech-tag">TypeScript</span>,
-            <span class="tech-tag">Jasmine</span>,
-            <span class="tech-tag">Bootstrap</span>,
-            <span class="tech-tag">Sass</span>,
-            <span class="tech-tag">Git</span>, etc.
-          
-          </p>
-           */}
+         
            <p>
             Learning in front-end development including technologies like
             <span >
@@ -68,6 +99,7 @@ const Skills = () => {
                 HTML5
               </a>
             </span>
+            <br/>
             ,
             <span className="tech-tag">
               <a href="https://en.wikipedia.org/wiki/CSS" style={spanStyles} target="_blank" rel="noopener noreferrer">
@@ -104,12 +136,14 @@ const Skills = () => {
                 TypeScript
               </a>
             </span>
+            <br/>
             ,
             <span className="tech-tag">
               <a href="https://jasmine.github.io/" style={spanStyles} target="_blank" rel="noopener noreferrer">
                 Jasmine
               </a>
             </span>
+            
             ,
             <span className="tech-tag">
               <a href="https://getbootstrap.com/" style={spanStyles} target="_blank" rel="noopener noreferrer">
@@ -149,14 +183,29 @@ I am able to provide efficient solutions to complex problems and deliver quality
           
           
         </div>
-        <div style={{ position: 'absolute', right: 0 }}>
-          <TextShpere style={{ backgroundColor: 'transparent' }} />
+       
+        {/* <div style={{ position: 'absolute', right: 0 }} className="myCanvasContaine">
+        
+        {/* span tag className must be "tagcloud"  */}
+        {/* <TextShpere style={{ backgroundColor: 'transparent' }} />
+        
+        </div> */} 
+        
+        <div className="myCanvas">
+        {/* span tag className must be "tagcloud"  */}
+        <span className="tagcloud"></span>
+        <TextShpere/>
+        
+        </div>
+        
+      
+          
         </div>
         
         
           
         
-      </div>
+      
       <Loader type="pacman" />
     </>
   );

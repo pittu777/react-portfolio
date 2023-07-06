@@ -30,3 +30,37 @@
 .tagcloud--item:hover {
     color: #ff6347;
 }
+.myCanvas {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 800px; /* Adjust the width as needed */
+    height: 600px; /* Adjust the height as needed */
+    
+  }
+  
+  @media (max-width: 768px) {
+    .myCanvas {
+      position: relative;
+      top: auto;
+      right: 0;
+      bottom: 0;
+      transform: none;
+      width: 80%; /* Reduce the width to a desired percentage */
+      max-width: 300px; /* Limit the maximum width if needed */
+      height: auto; /* Allow the height to adjust automatically */
+      margin: 20px auto; /* Adjust the margin for centering */
+    }
+  }
+  .slider {
+    display: none; /* Hide the slider by default */
+  
+    /* Styles for larger screens */
+    @media (min-width: 768px) {
+      display: block; /* Show the slider on larger screens */
+      /* Add your slider styles here */
+    }
+  }
+  
