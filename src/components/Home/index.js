@@ -34,10 +34,11 @@ const Home = () => {
 
     return () => clearTimeout(timeout);
   }, []);
+  
 
   return (
     <>
-        
+    
       <div className="container home-page">
         <div className="text-zone">
         
@@ -68,6 +69,7 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
+          
         </div>
         <Logo />
       </div>

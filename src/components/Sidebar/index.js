@@ -22,8 +22,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 
-const Sidebar = () => {
-  const [showNav, setShowNav] = useState(false);
+ const Sidebar = () => {
+ const [showNav, setShowNav] = useState(false);
 
   return (
     <div className="nav-bar">

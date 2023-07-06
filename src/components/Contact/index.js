@@ -13,6 +13,7 @@ const Contact = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
+ 
 
 
   
@@ -48,10 +49,11 @@ const Contact = () => {
         const closePopup = () => {
           setIsSuccess(false);
           setIsError(false);
+          
           window.location.reload(false);
         };
     
-        const timeoutId = setTimeout(closePopup, 3000); // Change the duration (in milliseconds) as desired
+        const timeoutId = setTimeout(closePopup, 300000);  //3000 put time also Change the duration (in milliseconds) as desired
     
         return () => clearTimeout(timeoutId);
       }
@@ -86,9 +88,14 @@ const Contact = () => {
                 <li>
                   <textarea placeholder="Message" name="message" required></textarea>
                 </li>
-                <li>
-                  <input type="submit" className="flat-button" value="SEND" />
-                </li>
+                {/* <li>
+                  <input type="submit" className="flat-button"  value="SEND" />
+                </li> */}
+                 {!isSuccess && !isError && (
+              <li>
+                <input type="submit" className="flat-button" value="SEND" />
+              </li>
+            )}
               </ul>
             </form>
             {isProcessing && (<p>Processing.........</p>)}
