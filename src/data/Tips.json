@@ -1,0 +1,28 @@
+{
+    "js": {
+      "title": "JavaScript Tips",
+      "content": "This is a JavaScript tip."
+    },
+    "react": {
+      "title": "Java Tips",
+      "content": "This is a Java tip."
+    },
+    "typescript": {
+        "title": "Java Tips",
+        "content": "This is a Java tip."
+      },
+      "css": {
+        "title": "Java Tips",
+        "content": "This is a Java tip."
+      },
+      "angular": {
+        "title": "Java Tips",
+        "content": "This is a Java tip."
+      },
+      "rxjs": {
+        "title": "Java Tips",
+        "content": "This is a Java tip."
+      }
+    
+  }
+  

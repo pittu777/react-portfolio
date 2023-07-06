@@ -6,6 +6,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo';
 import './index.scss';
 
+
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
