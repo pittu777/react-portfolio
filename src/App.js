@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import Skill from "./components/Skills";
 import Tips from "./components/Tips";
 import React from "react";
+import { logNameInConsole } from "./components/About/Console";
 import Angular from "./components/frontEnd/AllTips/Angular";
 import Js from "./components/frontEnd/AllTips/js";
 import Css from "./components/frontEnd/AllTips/css";
@@ -16,6 +17,7 @@ import Typescript from "./components/frontEnd/AllTips/Typescript";
 import "./App.scss";
 
 function App() {
+  logNameInConsole();
   return (
     <Router>
       <Routes>

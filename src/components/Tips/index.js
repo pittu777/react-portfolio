@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { logNameInConsole } from "../About/Console";
 import {
   faAngular,
   faCss3,
@@ -14,6 +15,7 @@ import "./index.scss";
 import AllTips from "../frontEnd/AllTips";
 
 const Tips = () => {
+  logNameInConsole();
   const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {

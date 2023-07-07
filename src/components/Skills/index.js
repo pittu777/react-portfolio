@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import CVPDF from "./PITTU_PRASANTH_21BCS11497_CV.pdf";
+import { logNameInConsole } from "../About/Console";
 import AnimatedLetters from "../AnimatedLetters";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./index.scss";
@@ -11,6 +12,7 @@ import "./index.css";
 import TagCloud from "TagCloud";
 
 const Skills = () => {
+  logNameInConsole();
   const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
@@ -49,6 +51,7 @@ const Skills = () => {
           "_lodash",
           "Bower",
           "RxJs",
+          "PITTU😅"
         ];
         let radius = 300;
         if (window.innerWidth <= 768) {

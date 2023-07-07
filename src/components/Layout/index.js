@@ -1,8 +1,10 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "../Sidebar/";
 import "./index.scss";
+import { logNameInConsole } from "../About/Console";
 
 const Layout = () => {
+  logNameInConsole();
   return (
     <div className="App">
       <Sidebar />

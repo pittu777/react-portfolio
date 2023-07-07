@@ -1,14 +1,16 @@
 import "./index.scss";
 import { useState } from "react";
 import LogoS from "../../assets/images/logoP.png";
+import { logNameInConsole } from "../About/Console";
 // import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
+  // faYoutube,
   // faSkype,
   faInstagram,
+  faFacebook
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faHome,
@@ -23,6 +25,7 @@ import {
 import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
+  logNameInConsole();
   const [showNav, setShowNav] = useState(false);
 
   return (
@@ -116,7 +119,7 @@ const Sidebar = () => {
             />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://www.youtube.com/" rel="noreferrer" target="_blank">
             <FontAwesomeIcon
               icon={faYoutube}
@@ -124,16 +127,16 @@ const Sidebar = () => {
               className="anchor-icon"
             />
           </a>
-        </li>
-        {/* <li>
-          <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
+        </li> */}
+        <li>
+          <a href="https://www.facebook.com/prasanth.yadav.9279?mibextid=ZbWKwL" rel="noreferrer" target="_blank">
             <FontAwesomeIcon
-              icon={faSkype}
+              icon={faFacebook}
               color="#4d4d4e"
               className="anchor-icon"
             />
           </a>
-        </li> */}
+        </li>
         <li>
           <a
             href="https://instagram.com/pittuprasanth__?igshid=MzNlNGNkZWQ4Mg=="

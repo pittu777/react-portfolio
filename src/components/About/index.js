@@ -12,9 +12,11 @@ import AnimatedLetters from "../AnimatedLetters";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.scss";
 import data from "../MyData/MyData";
+import { logNameInConsole } from "./Console";
 
 const About = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
+  logNameInConsole();
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -63,6 +65,7 @@ const About = () => {
         </div>
       </div>
       <Loader type="pacman" />
+      
     </>
   );
 };

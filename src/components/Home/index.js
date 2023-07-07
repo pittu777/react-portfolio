@@ -5,8 +5,11 @@ import AnimatedLetters from "../AnimatedLetters";
 // import LogoTitle from '../../assets/images/logoP.png';
 import Logo from "./Logo";
 import "./index.scss";
+import { logNameInConsole } from "../About/Console";
 
 const Home = () => {
+  logNameInConsole();
+
   const [letterClass, setLetterClass] = useState("text-animate");
 
   const nameArray = [

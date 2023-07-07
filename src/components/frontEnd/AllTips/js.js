@@ -3,7 +3,7 @@ import Loader from "react-loaders";
 import AnimatedLetters from "./../../AnimatedLetters";
 import "./../../Portfolio/index.scss";
 import { TipsData } from "../../../data/TipsData";
-import logojs from "./../../../assets/images/javascript.png"
+import logojs from "./../../../assets/images/jsfire.gif"
 
 const Js = () => {
   const [letterClass, setLetterClass] = useState("text-animate");

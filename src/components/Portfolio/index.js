@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import portfolioData from "../../data/portfolio.json";
+import { logNameInConsole } from "../About/Console";
 import "./index.scss";
 
 const Portfolio = () => {
+  logNameInConsole();
   const [letterClass, setLetterClass] = useState("text-animate");
   // const [portfolio, setPortfolio] = useState([]);
 
