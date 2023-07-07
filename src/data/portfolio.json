@@ -5,7 +5,7 @@
             "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/1-port-1.png",
             "title": "Quote",
             "description": "html,css,js",
-            "url": "https://github.com/pittu777?tab=repositories"
+            "url": "https://pittu777.github.io/quotes-generator-using-js/"
         },
         {
             "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/2-port-1.png",
@@ -17,49 +17,32 @@
             "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/3-port-1.png",
             "title": "model",
             "description": "html,css,js",
-            "url": "https://github.com/pittu777?tab=repositories"
+            "url": "https://pittu777.github.io/model/"
         },
         {
             "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/4-port-1.png",
             "title": "counter",
             "description": "html,css,js",
-            "url": "https://github.com/pittu777?tab=repositories"
+            "url": "https://pittu777.github.io/counter/"
         },
         {
             "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/5-port-1.png",
             "title": "nav-bar",
             "description": "html,css,js",
-            "url": "https://github.com/pittu777?tab=repositories"
+            "url": "https://pittu777.github.io/navbar/"
         },
         {
-            "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/6-port-1.png",
-            "title": "nav-bar",
+            "cover": "./weatherUsingReact.png",
+            "title": "weather-using-react",
             "description": "html,css,js",
-            "url": "https://github.com/pittu777?tab=repositories"
+            "url": "https://weather-using-react-js-84pz.vercel.app/"
         },
         {
-            "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/7-port-1.png",
-            "title": "color-flip",
+            "cover": "joke.png",
+            "title": "joke-generator",
             "description": "JS",
-            "url": "https://github.com/pittu777?tab=repositories"
-        },
-        {
-            "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/7-port-1.png",
-            "title": "color-flip",
-            "description": "JS",
-            "url": "https://github.com/pittu777?tab=repositories"
-        },
-        {
-            "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/7-port-1.png",
-            "title": "color-flip",
-            "description": "JS",
-            "url": "https://github.com/pittu777?tab=repositories"
-        },
-        {
-            "cover": "https://raw.githubusercontent.com/pittu777/portfolio777/master/assets/images/portfolio/6-port-1.png",
-            "title": "nav-bar",
-            "description": "html,css,js",
-            "url": "https://github.com/pittu777?tab=repositories"
+            "url": "https://new-nu-nine.vercel.app/"
         }
+        
     ]
 }
