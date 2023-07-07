@@ -1,0 +1,18 @@
+.scrollable-points {
+    max-height: 300px; /* Adjust the height as needed */
+    overflow-y: scroll;
+  }
+  
+  .points-container {
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .scrollable-points {
+      max-height: none;
+      overflow-y: visible;
+    }
+  }
+  

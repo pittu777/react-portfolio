@@ -1,18 +1,24 @@
-import { useEffect, useState } from 'react';
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
-import Loader from 'react-loaders';
-import AnimatedLetters from '../AnimatedLetters';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './index.scss';
-
-import Angular from '../frontEnd/Angular';
+import { useEffect, useState } from "react";
+import {
+  faAngular,
+  faCss3,
+  faGitAlt,
+  faHtml5,
+  faJsSquare,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
+import Loader from "react-loaders";
+import AnimatedLetters from "../AnimatedLetters";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./index.scss";
+import AllTips from "../frontEnd/AllTips";
 
 const Tips = () => {
-  const [letterClass, setLetterClass] = useState('text-animate');
+  const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      setLetterClass('text-animate-hover');
+      setLetterClass("text-animate-hover");
     }, 3000);
 
     return () => {
@@ -22,32 +28,42 @@ const Tips = () => {
 
   return (
     <>
-    
       <div className="container about-page">
         <div className="text-zone">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={["T", 'i', 'p', 's']}
+              strArray={["T", "i", "p", "s"]}
               idx={15}
             />
           </h1>
-          
-          <div>
-      <h1><AnimatedLetters
-              letterClass={letterClass}
-              strArray={["F", 'r', 'o', 'n','t','e','n','d', " ", 'T', 'i', 'p', 's']}
-              idx={15}
-            /></h1>
-      <p>
-      
-      <Angular/>
-      
-        
-        
-        </p>
-    </div>
 
+          <div>
+            <h1>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={[
+                  "F",
+                  "r",
+                  "o",
+                  "n",
+                  "t",
+                  "e",
+                  "n",
+                  "d",
+                  " ",
+                  "T",
+                  "i",
+                  "p",
+                  "s",
+                ]}
+                idx={15}
+              />
+            </h1>
+            <p>
+              <AllTips />
+            </p>
+          </div>
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">
@@ -72,7 +88,7 @@ const Tips = () => {
           </div>
         </div>
       </div>
-      
+
       <Loader type="pacman" />
     </>
   );
