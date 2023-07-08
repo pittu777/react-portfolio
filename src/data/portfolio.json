@@ -42,6 +42,12 @@
             "title": "joke-generator",
             "description": "JS",
             "url": "https://new-nu-nine.vercel.app/"
+        },
+        {
+            "cover": "cal.png",
+            "title": "calculator",
+            "description": "react-JS",
+            "url": "https://calculator-nine-rose.vercel.app/?vercelToolbarCode=x55NYzmvljUm1So"
         }
         
     ]
