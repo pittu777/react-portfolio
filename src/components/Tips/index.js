@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import { logNameInConsole } from "../About/Console";
-import {
-  faAngular,
-  faCss3,
-  faGitAlt,
-  faHtml5,
-  faJsSquare,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
+// import {
+//   faAngular,
+//   faCss3,
+//   faGitAlt,
+//   faHtml5,
+//   faJsSquare,
+//   faReact,
+// } from "@fortawesome/free-brands-svg-icons";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.scss";
 import AllTips from "../frontEnd/AllTips";
 
@@ -41,7 +41,7 @@ const Tips = () => {
           </h1>
 
           <div>
-            <h1>
+            {/* <h1>
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={[
@@ -61,13 +61,13 @@ const Tips = () => {
                 ]}
                 idx={15}
               />
-            </h1>
+            </h1> */}
             <p>
               <AllTips />
             </p>
           </div>
         </div>
-        <div className="stage-cube-cont">
+        {/* <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
               <FontAwesomeIcon icon={faAngular} color="#DD0031" />
@@ -88,7 +88,7 @@ const Tips = () => {
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <Loader type="pacman" />

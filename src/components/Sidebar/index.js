@@ -10,7 +10,7 @@ import {
   // faYoutube,
   // faSkype,
   faInstagram,
-  faFacebook
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faHome,
@@ -129,7 +129,11 @@ const Sidebar = () => {
           </a>
         </li> */}
         <li>
-          <a href="https://www.facebook.com/prasanth.yadav.9279?mibextid=ZbWKwL" rel="noreferrer" target="_blank">
+          <a
+            href="https://www.facebook.com/prasanth.yadav.9279?mibextid=ZbWKwL"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon={faFacebook}
               color="#4d4d4e"
