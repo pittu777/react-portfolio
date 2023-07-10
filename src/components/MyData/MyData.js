@@ -7,7 +7,7 @@ const data = [
     state: "PUNJAB",
     country: "INDIA",
     mail: "pittuprasanth98@gmail.com",
-    paragraph:"I am interested in learning new things – especially at projects. However, if you have other request orquestion, don’t hesitate to contact me using below formeither."
+    paragraph:"I am interested in learning new things – especially at projects. However, if you have other request or question, don’t hesitate to contact me using below formeither."
   },
   // Add more objects to the array if needed
 ];
