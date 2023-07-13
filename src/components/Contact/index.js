@@ -23,6 +23,8 @@ const Contact = () => {
     return () => clearTimeout(timeout);
   }, []);
 
+  var message="Processing.........";
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -71,9 +73,7 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <h3>
-          {data[0].paragraph}
-          </h3>
+          <h3>{data[0].paragraph}</h3>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
@@ -113,7 +113,7 @@ const Contact = () => {
                 )}
               </ul>
             </form>
-            {isProcessing && <p>Processing.........</p>}
+            {isProcessing && <p>{message}</p>}
             {isSuccess && (
               <div className="success-popup">
                 <h1>Success</h1>
