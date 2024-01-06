@@ -14,6 +14,7 @@ import Css from "./components/frontEnd/AllTips/css";
 import Rx from "./components/frontEnd/AllTips/Rx";
 import ReactTips from "./components/frontEnd/AllTips/React";
 import Typescript from "./components/frontEnd/AllTips/Typescript";
+
 import "./App.scss";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/cssTips" element={<Css />}></Route>
           <Route path="/rxjsTips" element={<Rx />}></Route>
           <Route path="/typescriptTips" element={<Typescript />}></Route>
+          
         </Route>
       </Routes>
     </Router>

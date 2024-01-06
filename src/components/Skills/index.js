@@ -10,6 +10,7 @@ import {
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import pdf from "./pittu.pdf"
 
 import data from "../MyData/MyData";
 // import { logNameInConsole } from "./Console";
@@ -40,10 +41,14 @@ const About = () => {
             />
           </h1>
           <p align="LEFT">{`${data[0].skill}`}</p>
-          <div className="skill-style">
-            Learning in front-end development including technologies like
+          <div className="link-style-container">
+          <a className="link-style-cv" href={pdf} target="_blank" rel="noreferrer">RESUME</a>
+          </div>
+          <div>
+            <span className="text-color">Learning in front-end development including technologies like</span>
             <span>
               <a
+              className="link-style"
                 href="https://en.wikipedia.org/wiki/HTML5"
                 
                 target="_blank"
@@ -55,6 +60,7 @@ const About = () => {
             <br />,
             <span className="tech-tag">
               <a
+              className="link-style"
                 href="https://en.wikipedia.org/wiki/CSS"
                 
                 target="_blank"
@@ -66,6 +72,7 @@ const About = () => {
             ,
             <span className="tech-tag">
               <a
+              className="link-style"
                 href="https://en.wikipedia.org/wiki/JavaScript"
                 
                 target="_blank"
@@ -77,6 +84,7 @@ const About = () => {
             ,
             <span className="tech-tag">
               <a
+              className="link-style"
                 href="https://jquery.com/"
                 
                 target="_blank"
@@ -88,6 +96,7 @@ const About = () => {
             ,
             <span className="tech-tag">
               <a
+              className="link-style"
                 href="https://angular.io/"
                 
                 target="_blank"
@@ -99,6 +108,7 @@ const About = () => {
             ,
             <span className="tech-tag">
               <a
+              className="link-style"
                 href="https://reactjs.org/"
                 
                 target="_blank"
@@ -110,6 +120,7 @@ const About = () => {
             ,
             <span className="tech-tag">
               <a
+              className="link-style"
                 href="https://www.typescriptlang.org/"
                 
                 target="_blank"
@@ -121,6 +132,7 @@ const About = () => {
             <br />,
             <span className="tech-tag">
               <a
+              className="link-style"
                 href="https://jasmine.github.io/"
                 
                 target="_blank"
@@ -132,6 +144,7 @@ const About = () => {
             ,
             <span className="tech-tag">
               <a
+              className="link-style"
                 href="https://getbootstrap.com/"
                 
                 target="_blank"
@@ -143,6 +156,7 @@ const About = () => {
             ,
             <span className="tech-tag">
               <a
+              className="link-style"
                 href="https://sass-lang.com/"
                 
                 target="_blank"
@@ -154,6 +168,7 @@ const About = () => {
             ,
             <span className="tech-tag">
               <a
+              className="link-style"
                 href="https://git-scm.com/"
                 
                 target="_blank"

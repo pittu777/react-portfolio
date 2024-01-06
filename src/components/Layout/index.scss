@@ -179,6 +179,25 @@
       color: #fff;
     }
   }
+
+  .link-style{
+    color: yellow;
+  }
+  .link-style-container{
+    display: block;
+  }
+  .link-style-cv{
+    text-align: center;
+    display: inline-block;
+    margin: 10px 10px 10px -1px;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    color: #ffd700;
+    border: 1px solid steelblue;
+  }
+  .text-color{
+    color: white;
+  }
 }
 
 @media screen and (max-width: 1200px) {
