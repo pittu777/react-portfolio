@@ -4,3 +4,5 @@ export const tipsLog3 = require("./../../assets/images/react copy.png");
 export const tipsLog4 = require("./../../assets/images/css.png");
 export const tipsLog5 = require("./../../assets/images/rxjs.png");
 export const tipsLog6 = require("./../../assets/images/images.png");
+export const tipsLog7 = require("./../../assets/images/next.png")
+export const tipsLog8 = require("./../../assets/images/node.png")

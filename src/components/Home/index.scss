@@ -135,3 +135,18 @@
     margin: auto;
   }
 }
+
+@media screen and (max-width: 498px) {
+  .home-page .text-zone {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+
+  .home-page .flat-button {
+    float: none;
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 80%; /* Adjust the width as needed */
+  }
+}

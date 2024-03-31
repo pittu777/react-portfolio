@@ -6,13 +6,15 @@ import {
   tipsLog4,
   tipsLog5,
   tipsLog6,
+  tipsLog7,
+  tipsLog8,
 } from "./logoImports";
 import "./index.scss";
 
 const AllTips = () => {
   return (
     <>
-      {/* <div className="container.tips"> */}
+      
       <div className="container.tips">
         <a href="/js" rel="noreferrer">
           <img
@@ -60,6 +62,22 @@ const AllTips = () => {
             className="small-image"
             rel="tips-logo"
             src={tipsLog6}
+            alt="javascript"
+          />
+        </a>
+        <a href="typescriptTips" rel="noreferrer">
+          <img
+            className="small-image"
+            rel="tips-logo"
+            src={tipsLog7}
+            alt="javascript"
+          />
+        </a>
+        <a href="typescriptTips" rel="noreferrer">
+          <img
+            className="small-image"
+            rel="tips-logo"
+            src={tipsLog8}
             alt="javascript"
           />
         </a>
