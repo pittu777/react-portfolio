@@ -11,13 +11,13 @@ import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import pdf from "./pittu.pdf"
-
+import "./index.css";
 import data from "../MyData/MyData";
-// import { logNameInConsole } from "./Console";
+import { IconCloudDemo } from "../IconCloudDemo";
 
 const About = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  // logNameInConsole();
+  
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -179,7 +179,7 @@ const About = () => {
             </span>
           </div>
         </div>
-        <div className="stage-cube-cont">
+        {/* <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
               <FontAwesomeIcon icon={faAngular} color="#DD0031" />
@@ -200,6 +200,10 @@ const About = () => {
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
             </div>
           </div>
+        </div> */}
+        <div className="skills-charts">
+
+        <IconCloudDemo/>
         </div>
       </div>
       <Loader type="pacman" />
