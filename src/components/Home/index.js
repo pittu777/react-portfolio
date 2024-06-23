@@ -6,6 +6,7 @@ import AnimatedLetters from "../AnimatedLetters";
 import Logo from "./Logo";
 import "./index.scss";
 import { logNameInConsole } from "../About/Console";
+import { IconCloudDemo } from "../IconCloudDemo";
 
 const Home = () => {
   logNameInConsole();
@@ -14,12 +15,7 @@ const Home = () => {
 
   const nameArray = [
     " ",
-    "P",
-    "I",
-    "T",
-    "T",
-    "U",
-    " ",
+    
     "P",
     "R",
     "A",
@@ -86,7 +82,11 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        {/* <Logo /> */}
+        <div className="skills-charts">
+
+        <IconCloudDemo/>
+        </div>
       </div>
 
       <Loader type="pacman" />
