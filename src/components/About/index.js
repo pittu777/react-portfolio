@@ -72,35 +72,4 @@ const About = () => {
 };
 
 
-// backend
-// const About = () => {
-//   const [aboutData, setAboutData] = useState({});
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//       axios.get('/aboutData')
-//           .then(response => {
-//               setAboutData(response.data);
-//               setLoading(false);
-//           })
-//           .catch(error => {
-//               console.error('Error fetching about data:', error);
-//               setLoading(false);
-//           });
-//   }, []);
-
-//   return (
-//       <div>
-//           {loading ? (
-//               <p>Loading...</p>
-//           ) : (
-//               <div>
-//                   <h1>{aboutData.title}</h1>
-//                   <p>{aboutData.content}</p>
-//               </div>
-//           )}
-//       </div>
-//   );
-// };
-//
 export default About;

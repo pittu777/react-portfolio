@@ -2,13 +2,10 @@ import "./index.scss";
 import { useState } from "react";
 import LogoS from "../../assets/images/logoP.png";
 import { logNameInConsole } from "../About/Console";
-// import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
-  // faYoutube,
-  // faSkype,
   faInstagram,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
@@ -119,15 +116,7 @@ const Sidebar = () => {
             />
           </a>
         </li>
-        {/* <li>
-          <a href="https://www.youtube.com/" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon
-              icon={faYoutube}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li> */}
+        
         <li>
           <a
             href="https://www.facebook.com/prasanth.yadav.9279?mibextid=ZbWKwL"

@@ -103,9 +103,7 @@ const Contact = () => {
                     required
                   ></textarea>
                 </li>
-                {/* <li>
-                  <input type="submit" className="flat-button"  value="SEND" />
-                </li> */}
+          
                 {!isSuccess && !isError && (
                   <li>
                     <input type="submit" className="flat-button" value="SEND" />
