@@ -2,13 +2,12 @@ import { useEffect, useState } from "react";
 
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import pdf from "./resume_tech.pdf"
 import "./index.css";
 import data from "../MyData/MyData";
 import { IconCloudDemo } from "../IconCloudDemo";
 
-const About = () => {
+const Skill = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   
 
@@ -200,10 +199,11 @@ const About = () => {
         <IconCloudDemo/>
         </div>
       </div>
-      <Loader type="pacman" />
+      
+      {/* <Loader type="pacman" /> */}
       
     </>
   );
 };
 
-export default About;
+export default Skill;

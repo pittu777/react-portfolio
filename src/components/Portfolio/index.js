@@ -76,7 +76,7 @@ const Portfolio = () => {
           renderPortfolio(portfolioData)
         )}
       </div>
-      <Loader type="pacman" />
+      {/* <Loader type="pacman" /> */}
     </>
   );
 };
