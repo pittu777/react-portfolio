@@ -1,14 +1,15 @@
+
 import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
-import portfolioData from "../../data/portfolio.json";
 import { logNameInConsole } from "../About/Console";
 import "./index.scss";
 
 const Portfolio = () => {
   logNameInConsole();
   const [letterClass, setLetterClass] = useState("text-animate");
-  // const [portfolio, setPortfolio] = useState([]);
+  const [portfolioData, setPortfolioData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -18,38 +19,43 @@ const Portfolio = () => {
     return () => {
       clearTimeout(timer);
     };
-  });
+  }, []);
 
-  // useEffect(() => {
-  //     getPortfolio();
-  // }, []);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("https://raw.githubusercontent.com/pittu777/portfolio-projects/main/portfolio.json");
+        const data = await response.json();
+        setPortfolioData(data.portfolio);
+      } catch (error) {
+        console.error("Error fetching portfolio data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  // const getPortfolio = async () => {
-  //     const querySnapshot = await getDocs(collection(db, 'portfolio'));
-  //     setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
-  // }
+    fetchData();
+  }, []);
 
   const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
-        {portfolio.map((port, idx) => {
-          return (
-            <div className="image-box" key={idx}>
-              <img
-                src={port.cover}
-                className="portfolio-image"
-                alt="portfolio"
-              />
-              <div className="content">
-                <p className="title">{port.title}</p>
-                <h4 className="description">{port.description}</h4>
-                <button className="btn" onClick={() => window.open(port.url)}>
-                  View
-                </button>
-              </div>
+        {portfolio.map((port, idx) => (
+          <div className="image-box" key={idx}>
+            <img
+              src={port.cover}
+              className="portfolio-image"
+              alt="portfolio"
+            />
+            <div className="content">
+              <p className="title">{port.title}</p>
+              <h4 className="description">{port.description}</h4>
+              <button className="btn" onClick={() => window.open(port.url)}>
+                View
+              </button>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     );
   };
@@ -64,7 +70,11 @@ const Portfolio = () => {
             idx={15}
           />
         </h1>
-        <div>{renderPortfolio(portfolioData.portfolio)}</div>
+        {loading ? (
+          <p>Loading.....</p>
+        ) : (
+          renderPortfolio(portfolioData)
+        )}
       </div>
       <Loader type="pacman" />
     </>

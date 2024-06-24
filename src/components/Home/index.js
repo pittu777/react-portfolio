@@ -8,6 +8,8 @@ import "./index.scss";
 import { logNameInConsole } from "../About/Console";
 import { IconCloudDemo } from "../IconCloudDemo";
 
+
+
 const Home = () => {
   logNameInConsole();
 
@@ -90,6 +92,7 @@ const Home = () => {
       </div>
 
       <Loader type="pacman" />
+     
     </>
   );
 };
