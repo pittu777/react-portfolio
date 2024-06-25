@@ -8,6 +8,7 @@ import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 import Map from "./Map/Map";
 import data from "../MyData/MyData";
+import confetti from "canvas-confetti";
 
 
 const Contact = () => {
@@ -20,16 +21,11 @@ const Contact = () => {
 
 
   function onClick1() {
-    import('https://esm.run/canvas-confetti@1').then((confetti) => {
-      confetti.default({
-        particleCount: 150,
-        spread: 60
-      });
-    }).catch((error) => {
-      console.error('Error loading confetti module:', error);
+    confetti({
+      particleCount: 150,
+      spread: 60
     });
   }
-  
 
   useEffect(() => {
     const timeout = setTimeout(() => {
