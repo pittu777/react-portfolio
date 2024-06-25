@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 // import LogoTitle from '../../assets/images/logoP.png';
-import Logo from "./Logo";
+// import Logo from "./Logo";
 import "./index.scss";
 import { logNameInConsole } from "../About/Console";
 import { IconCloudDemo } from "../IconCloudDemo";

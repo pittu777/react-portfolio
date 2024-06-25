@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
+import confetti from "https://esm.run/canvas-confetti@1";
 // import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -14,6 +15,13 @@ const Contact = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
+
+  function onClick1() {
+    confetti({
+      particleCount: 150,
+      spread: 60
+    });
+  }
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -64,6 +72,8 @@ const Contact = () => {
 
   return (
     <>
+    
+
       <div className="container contact-page">
         <div className="text-zone">
           <h1>
@@ -106,7 +116,7 @@ const Contact = () => {
           
                 {!isSuccess && !isError && (
                   <li>
-                    <input type="submit" className="flat-button" value="SEND" />
+                    <input onClick={onClick1} type="submit" className="flat-button button" value="SEND" />
                   </li>
                 )}
               </ul>

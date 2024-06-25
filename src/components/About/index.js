@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.scss";
 import data from "../MyData/MyData";
 import { logNameInConsole } from "./Console";
-import axios from "axios"
+// import axios from "axios"
 
 const About = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
