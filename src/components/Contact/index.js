@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
-import confetti from "https://esm.run/canvas-confetti@1";
-// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
+import confetti from "./../../lib/confetti.module.mjs"
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import AnimatedLetters from "../AnimatedLetters";
