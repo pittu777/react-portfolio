@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
-
-import confetti from "./../../lib/confetti.module.mjs"
+// import confetti from "https://esm.run/canvas-confetti@1";
+// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import AnimatedLetters from "../AnimatedLetters";
@@ -9,19 +9,27 @@ import "./index.scss";
 import Map from "./Map/Map";
 import data from "../MyData/MyData";
 
+
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const form = useRef();
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
+ 
+
 
   function onClick1() {
-    confetti({
-      particleCount: 150,
-      spread: 60
+    import('https://esm.run/canvas-confetti@1').then((confetti) => {
+      confetti.default({
+        particleCount: 150,
+        spread: 60
+      });
+    }).catch((error) => {
+      console.error('Error loading confetti module:', error);
     });
   }
+  
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -73,6 +81,7 @@ const Contact = () => {
   return (
     <>
     
+   
 
       <div className="container contact-page">
         <div className="text-zone">
