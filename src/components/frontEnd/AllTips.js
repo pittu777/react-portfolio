@@ -24,10 +24,10 @@ const AllTips = () => {
   return (
     <>
       
-      <div className="container.tips">
+      <div className="grid-container">
         <a href="/js" rel="noreferrer">
           <img
-            className="small-image"
+            className="small-image "
             rel="tips-logo"
             src={tipsLog1}
             alt="javascript"
@@ -43,7 +43,7 @@ const AllTips = () => {
         </a>
         <a href="/angularTips" rel="noreferrer">
           <img
-            className="small-image"
+            className="small-image item-3"
             rel="tips-logo"
             src={tipsLog3}
             alt="javascript"
