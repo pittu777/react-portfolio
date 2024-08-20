@@ -2,7 +2,7 @@ const data = [
   {
     name: "PITTU PRASANTH",
     aboutMe:
-      "My name is PITTU PRASANTH and I am a fourth-year computer science engineering student at Chandigarh University. I have a keen interest in web development and am currently learning programming languages such as Python, HTML, CSS, JS, React, Next Js and backend technologies like MongoDB, Node, Express. I am a self-motivated individual with a passion for learning new technologies and solving complex problems. I enjoy working on projects that challenge me and push me to develop my skills further.",
+      "My name is PITTU PRASANTH, and I am a fourth-year computer science engineering student at Chandigarh University. I have a keen interest in web development and am proficient in React, HTML, CSS, JavaScript, and Next.js. Currently, I am expanding my skills by learning backend technologies like Node.js, Express, and MongoDB. I am a self-motivated individual with a passion for exploring new technologies and solving complex problems. I thrive on tackling challenging projects that help me grow and refine my skills.",
     city: "CHANDIGARH",
     state: "PUNJAB",
     country: "INDIA",
