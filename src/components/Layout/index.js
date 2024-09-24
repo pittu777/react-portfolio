@@ -2,11 +2,14 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "../Sidebar/";
 import "./index.scss";
 import { logNameInConsole } from "../About/Console";
+import Particle from "../../Particle";
 
 const Layout = () => {
   logNameInConsole();
   return (
+    <>
     <div className="App">
+      <Particle/>
       <Sidebar />
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
@@ -19,6 +22,7 @@ const Layout = () => {
         </span>
       </div>
     </div>
+    </>
   );
 };
 
