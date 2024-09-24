@@ -67,7 +67,7 @@ export default function Particle() {
                   default: "bounce",
                 },
                 random: false,
-                speed: 1.2,
+                speed: 4,
                 straight: false,
               },
               number: {
@@ -81,7 +81,7 @@ export default function Particle() {
                 value: 0.5,
               },
               shape: {
-                type: "circle",
+                type: "triangle",
               },
               size: {
                 value: { min: 1, max: 5 },
