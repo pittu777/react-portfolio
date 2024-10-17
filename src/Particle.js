@@ -75,13 +75,13 @@ export default function Particle() {
                   enable: true,
                   area: 800,
                 },
-                value: 160,
+                value: 20,
               },
               opacity: {
                 value: 0.5,
               },
               shape: {
-                type: "triangle",
+                type: "circle",
               },
               size: {
                 value: { min: 1, max: 5 },
