@@ -17,6 +17,7 @@ import Typescript from "./components/frontEnd/AllTips/Typescript";
 
 import "./App.scss";
 
+
 function App() {
   logNameInConsole();
   return (
