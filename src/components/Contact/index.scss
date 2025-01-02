@@ -83,11 +83,12 @@ h3{
 }
 
 .map-wrap {
-  background: rgba(8, 253, 216, 0.1);
+  background: rgba(104, 107, 106, 0.1);
   float: right;
   width: 53%;
   height: 115%;
   margin-top: -3%;
+  // padding: 10% 10% 10% 10%;
 }
 
 .leaflet-container {
@@ -127,8 +128,8 @@ h3{
 @media screen and (max-width: 1200px) {
   .map-wrap {
     float: none;
-    margin: 0;
-    width: 100%;
+    margin-left: 26px;
+    width: 85%;
     height: 400px;
   }
   

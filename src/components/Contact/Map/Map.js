@@ -1,5 +1,5 @@
 import React from "react";
-import "./Map.css"; // CSS file for styling
+import "./Map.css"; 
 
 const Map = () => {
   return (
