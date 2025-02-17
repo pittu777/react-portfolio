@@ -38,7 +38,7 @@ const Skill = () => {
           <a className="link-style-cv" href={pdf} target="_blank" rel="noreferrer">RESUME</a>
           </div>
           <div>
-            <span className="text-color">Learning in front-end development including technologies like</span>
+            <span className="text-color">Learning in back-end development including technologies like </span>
             <span>
               <a
               className="link-style"
@@ -47,7 +47,7 @@ const Skill = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                HTML5
+                Node js
               </a>
             </span>
             <br />,
@@ -59,7 +59,7 @@ const Skill = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                CSS3
+                Express JS
               </a>
             </span>
             ,
@@ -71,7 +71,7 @@ const Skill = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                JavaScript
+                mongoDB
               </a>
             </span>
             ,
@@ -83,34 +83,11 @@ const Skill = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                jQuery
+                REST API
               </a>
             </span>
             ,
-            <span className="tech-tag">
-              <a
-              className="link-style"
-                href="https://angular.io/"
-                
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Angular2
-              </a>
-            </span>
-            ,
-            <span className="tech-tag">
-              <a
-              className="link-style"
-                href="https://reactjs.org/"
-                
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                React
-              </a>
-            </span>
-            ,
+          
             <span className="tech-tag">
               <a
               className="link-style"
@@ -123,42 +100,10 @@ const Skill = () => {
               </a>
             </span>
             <br />,
-            <span className="tech-tag">
-              <a
-              className="link-style"
-                href="https://jasmine.github.io/"
-                
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Jasmine
-              </a>
-            </span>
-            ,
-            <span className="tech-tag">
-              <a
-              className="link-style"
-                href="https://getbootstrap.com/"
-                
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Bootstrap
-              </a>
-            </span>
-            ,
-            <span className="tech-tag">
-              <a
-              className="link-style"
-                href="https://sass-lang.com/"
-                
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Sass
-              </a>
-            </span>
-            ,
+            
+            
+          
+            
             <span className="tech-tag">
               <a
               className="link-style"

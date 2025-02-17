@@ -57,14 +57,14 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faCogs} color="#4d4d4e" />
         </NavLink>
-        <NavLink
+        {/* <NavLink
           activeclassname="active"
           className="tips-link"
           to="/tips"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faLightbulb} color="#4d4d4e" />
-        </NavLink>
+        </NavLink> */}
         <NavLink
           activeclassname="active"
           className="portfolio-link"
