@@ -2,16 +2,19 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "../Sidebar/";
 import "./index.scss";
 import { logNameInConsole } from "../About/Console";
-import Particle from "../../Particle";
+import About from "../About";
+// import Particle from "../../Particle";
 
 const Layout = () => {
   logNameInConsole();
   return (
     <>
     <div className="App">
-      <Particle/>
+      {/* <Particle/> */}
+      
       <Sidebar />
       <div className="page">
+        
         <span className="tags top-tags">&lt;body&gt;</span>
 
         <Outlet />

@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.scss";
 import data from "../MyData/MyData";
 import { logNameInConsole } from "./Console";
-// import axios from "axios"
+
 
 const About = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -33,14 +33,19 @@ const About = () => {
     <>
       <div className="container about-page">
         <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
-              idx={15}
-            />
-          </h1>
-          <p align="LEFT">{`${data[0].aboutMe}`}</p>
+          <div className="about-container">
+            
+            <h1>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
+                idx={15}
+              />
+            </h1>
+          </div>
+            <p className="contact-desc" align="LEFT">{`${data[0].aboutMe}`}</p>
+
+          
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">
@@ -66,10 +71,8 @@ const About = () => {
         </div>
       </div>
       <Loader type="pacman" />
-      
     </>
   );
 };
-
 
 export default About;

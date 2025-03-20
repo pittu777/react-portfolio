@@ -33,10 +33,15 @@ const Skill = () => {
               idx={15}
             />
           </h1>
+          
           <p align="LEFT">{`${data[0].skill}`}</p>
           <div className="link-style-container">
           <a className="link-style-cv" href={pdf} target="_blank" rel="noreferrer">RESUME</a>
           </div>
+         
+
+          
+{/* 
           <div>
             <span className="text-color">Learning in back-end development including technologies like </span>
             <span>
@@ -115,9 +120,14 @@ const Skill = () => {
                 Git
               </a>
             </span>
-          </div>
+          </div> */}
+
+
+          
         </div>
         
+      
+
         <div className="skills-charts">
 
         <IconCloudDemo/>

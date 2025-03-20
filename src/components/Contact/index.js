@@ -232,7 +232,7 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <h3>{data[0].paragraph}</h3>
+          <h3 className="contact-desc">{data[0].paragraph}</h3>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
