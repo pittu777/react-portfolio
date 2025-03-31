@@ -35,6 +35,7 @@ const Skill = () => {
           </h1>
           
           <p align="LEFT">{`${data[0].skill}`}</p>
+          
           <div className="link-style-container">
           <a className="link-style-cv" href={pdf} target="_blank" rel="noreferrer">RESUME</a>
           </div>

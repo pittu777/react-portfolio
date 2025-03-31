@@ -160,19 +160,58 @@
   // .link-style-container{
   //   display: block;
   // }
-  .link-style-cv{
+  // .link-style-cv{
+  //   position: absolute;
+  //   top:75%;
+  //   padding: 10px 10px 10px;
+  //   border-radius: 5px;
+  //   color: #ffd700;
+  //   border: 1px solid steelblue;
+  // }
+  .text-color{
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .link-style-container{
+    // background-color: red;
+    // border: 2px solid black;
+
+    .link-style-cv{
+      position: absolute;
+      top:50%;
+      left: 2.9%;
+      padding: 10px 10px 10px;
+      border-radius: 5px;
+      color: #ffd700;
+      border: 1px solid steelblue;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+ .link-style-cv{
     position: absolute;
-    top:75%;
-    // text-align: center;
-    // display: inline-block;
-    // margin: 10px 10px 10px -1px;
+    top:30%;
+    left: 2.0%;
     padding: 10px 10px 10px;
     border-radius: 5px;
     color: #ffd700;
     border: 1px solid steelblue;
   }
-  .text-color{
-    color: white;
+}
+
+@media (min-width: 1025px) {
+  .link-style-cv{
+    position: absolute;
+    top:75%;
+    left: -2%;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    color: #ffd700;
+    border: 1px solid steelblue;
   }
 }
 
@@ -223,4 +262,7 @@
     height: 0%;
     overflow: visible;
   }
+  
 }
+
+
