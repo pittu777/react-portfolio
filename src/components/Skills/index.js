@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
@@ -6,9 +6,14 @@ import pdf from "./resume_tech.pdf"
 import "./index.css";
 import data from "../MyData/MyData";
 import { IconCloudDemo } from "../IconCloudDemo";
+import gsap from "gsap";
+import { SplitText } from "gsap/SplitText";
+gsap.registerPlugin(SplitText);
+
 
 const Skill = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
+  const descRef = useRef(null);
   
 
   useEffect(() => {
@@ -20,6 +25,36 @@ const Skill = () => {
       clearTimeout(timeoutId);
     };
   }, []);
+
+
+  
+  useEffect(() => {
+  const timeout = setTimeout(() => {
+    setLetterClass("text-animate-hover");
+
+    // SplitText animation using `onSplit`
+    SplitText.create(".split", {
+      type: "words, chars",
+      onSplit(self) {
+        gsap.from(self.chars, {
+          y:100,
+          autoAlpha: 0,
+          stagger: {
+            amount:2,
+            repeat:0,
+            from:"random",
+          }
+        });
+      },
+    });
+  }, 1000);
+
+
+
+  return () => clearTimeout(timeout);
+}, []);
+
+  
 
   return (
     <>
@@ -34,7 +69,7 @@ const Skill = () => {
             />
           </h1>
           
-          <p align="LEFT">{`${data[0].skill}`}</p>
+          <p align="LEFT" className="split" ref={descRef}>{`${data[0].skill}`}</p>
           
           <div className="link-style-container">
           <a className="link-style-cv" href={pdf} target="_blank" rel="noreferrer">RESUME</a>
