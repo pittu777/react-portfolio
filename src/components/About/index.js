@@ -19,7 +19,7 @@ import gsap from "gsap";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 
 
-// Register the plugin
+
 gsap.registerPlugin(ScrambleTextPlugin);
 
 const About = () => {
@@ -34,11 +34,11 @@ const About = () => {
 
       // Animate Scrambled Text after initial delay
       gsap.to(aboutRef.current, {
-        duration: 2,
+        duration: 10,
         scrambleText: {
           text: data[0].aboutMe,
           chars: "upperAndLowerCase",
-          revealDelay: 0.3,
+          revealDelay: 0.5,
         },
         ease: "power2.out"
       });

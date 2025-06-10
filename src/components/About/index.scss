@@ -1,6 +1,5 @@
 
 
-
 .stage-cube-cont {
   width: 50%;
   height: 50%;
@@ -10,16 +9,21 @@
   position: absolute;
   right: 0;
   overflow: hidden;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .cubespinner {
   animation-name: spincube;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 12s;
+  animation-duration: 22s;
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  position: relative;
 
   div {
     position: absolute;
@@ -33,6 +37,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px 0px lightyellow;
+    box-sizing: border-box;
   }
 
   .face1 {
@@ -61,24 +66,146 @@
   }
 }
 
+/* Media Query for Large Devices (1024px and above) */
+@media (min-width: 1024px) {
+  .stage-cube-cont {
+    width: 40%;
+    height: 70%;
+    padding-top: 10%;
+  }
+  
+  .cubespinner {
+    margin-left: calc(50% - 120px);
+    transform-origin: 120px 120px 0;
+    
+    div {
+      width: 240px;
+      height: 240px;
+      font-size: 120px;
+    }
+    
+    .face1 {
+      transform: translateZ(120px);
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(120px);
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(120px);
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(120px);
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(120px);
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(120px);
+    }
+  }
+}
+
+/* Media Query for Medium Devices (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .stage-cube-cont {
+    width: 60%;
+    height: 50%;
+    padding-top: 15%;
+  }
+  
+  .cubespinner {
+    margin-left: calc(50% - 90px);
+    transform-origin: 90px 90px 0;
+    
+    div {
+      width: 180px;
+      height: 180px;
+      font-size: 80px;
+    }
+    
+    .face1 {
+      transform: translateZ(90px);
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(90px);
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(90px);
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(90px);
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(90px);
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(90px);
+    }
+  }
+}
+
+/* Media Query for Small Devices (up to 767px) */
+@media (max-width: 767px) {
+  .stage-cube-cont {
+    width: 100%;
+    height: 300px;
+    padding-top: 0;
+    position: relative;
+    margin: 0 auto;
+    right: auto;
+  }
+  
+  .cubespinner {
+    margin-left: calc(50% - 75px);
+    transform-origin: 75px 75px 0;
+    
+    div {
+      width: 150px;
+      height: 150px;
+      font-size: 60px;
+    }
+    
+    .face1 {
+      transform: translateZ(75px);
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(75px);
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(75px);
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(75px);
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(75px);
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(75px);
+    }
+  }
+}
+
 @keyframes spincube {
-  from,
-  to {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
   }
-  16% {
-    transform: rotateY(-90deg) rotateZ(90deg);
+  16.67% {
+    transform: rotateY(-90deg);
   }
-  33% {
-    transform: rotateY(-90deg) rotateX(90deg);
+  33.33% {
+    transform: rotateY(-90deg) rotateX(-90deg);
   }
   50% {
-    transform: rotateY(-180deg) rotateZ(90deg);
+    transform: rotateY(-180deg) rotateX(-90deg);
   }
-  66% {
-    transform: rotateY(-270deg) rotateX(90deg);
+  66.67% {
+    transform: rotateY(-270deg) rotateX(-90deg);
   }
-  83% {
-    transform: rotateX(90deg);
+  83.33% {
+    transform: rotateY(-270deg) rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(-360deg);
   }
 }
