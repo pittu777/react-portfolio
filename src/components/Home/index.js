@@ -6,7 +6,6 @@ import AnimatedLetters from "../AnimatedLetters";
 // import Logo from "./Logo";
 import "./index.scss";
 import { logNameInConsole } from "../About/Console";
-import { IconCloudDemo } from "../IconCloudDemo";
 
 
 
@@ -80,10 +79,6 @@ const Home = () => {
           </Link>
         </div>
         {/* <Logo /> */}
-        <div className="skills-charts">
-
-        <IconCloudDemo/>
-        </div>
       </div>
 
       <Loader type="pacman" />

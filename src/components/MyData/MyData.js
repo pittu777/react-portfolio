@@ -2,7 +2,7 @@ const data = [
   {
     name: "PITTU PRASANTH",
     aboutMe:
-      "My name is PITTU PRASANTH, and I am a fourth-year computer science engineering student at Chandigarh University. I have a keen interest in web development and am proficient in React, HTML, CSS, JavaScript, and Next.js. Currently, I am expanding my skills by learning backend technologies like Node.js, Express, and MongoDB. I am a self-motivated individual with a passion for exploring new technologies and solving complex problems. I thrive on tackling challenging projects that help me grow and refine my skills.",
+      "My name is Pittu Prasanth. I’m a Computer Science graduate from Chandigarh University (2025 batch) and a full-stack developer with strong focus on React, Next.js, Node.js, Prisma, and PostgreSQL. I’ve completed multiple internships, including a paid internship at Irona AI, where I worked on a real production chat application using Next.js and TypeScript. I contributed to features like model selection, performance optimization, caching, and fixing critical UI bugs, which improved application stability and user experience. Earlier, during my internships at Zummit Infolabs and JDB Infotech, I built backend APIs, authentication systems, and full-stack applications like an e-commerce platform and a pet adoption system. I enjoy building scalable web applications and solving problems. I’ve solved 160+ LeetCode problems, built 20+ projects, and I’m continuously improving my problem-solving and system design basics. Currently, I’m looking for a frontend or full-stack developer role where I can contribute to real products, learn from experienced engineers, and grow as a software engineer.",
     city: "CHANDIGARH",
     state: "PUNJAB",
     country: "INDIA",

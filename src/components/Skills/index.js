@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
-import pdf from "./resume_tech.pdf"
+import pdf from "./resume_new_3.pdf";
 import "./index.css";
 import data from "../MyData/MyData";
 import { IconCloudDemo } from "../IconCloudDemo";
