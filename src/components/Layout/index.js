@@ -2,7 +2,6 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "../Sidebar/";
 import "./index.scss";
 import { logNameInConsole } from "../About/Console";
-import About from "../About";
 // import Particle from "../../Particle";
 
 const Layout = () => {

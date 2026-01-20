@@ -17,7 +17,6 @@ import {
   faBars,
   faClose,
   faCogs,
-  faLightbulb,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 
