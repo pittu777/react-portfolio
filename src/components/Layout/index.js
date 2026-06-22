@@ -6,6 +6,7 @@ import { logNameInConsole } from "../About/Console";
 
 const Layout = () => {
   logNameInConsole();
+ // example 
   return (
     <>
     <div className="App">
